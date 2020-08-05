@@ -4,7 +4,12 @@
 
 int main() {
 	int rnd,cntH=0,cntT=0;
+	char name[15];
 	srand((unsigned int)time(NULL));
+
+	printf("Who are you?\n>");
+	scanf_s("%s", name,15);
+	printf("Hello, %s\n", name);
 
 	printf("Tossing a coin...\n");
 	for (int i = 0;i < 3;i++) {
